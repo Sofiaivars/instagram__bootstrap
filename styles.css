@@ -3,38 +3,18 @@
     max-width: 20px;
     max-height: 20px;
 }
-
-
-.btn-icon {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.btn-icon i {
-    color: gray; /* Color por defecto */
-    font-size: 24px; /* Tamaño del ícono */
-}
-
-.btn-icon.active i {
-    color: rgb(88, 121, 190); /* Color al estar activo */
-}
-
 .grid-view {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
 .grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
-
 .grid .col {
-    aspect-ratio: 1 / 1; /* Hace que cada imagen sea cuadrada */
+    aspect-ratio: 1 / 1;
 }
