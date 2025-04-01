@@ -25,7 +25,47 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
-          <button class="btn btn-outline-success me-1" type="submit">Create a new post</button>
+         
+          <button type="button" class="btn btn-success me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                 
+                      <div class="card-body">
+                       <form>
+                          <div class="mb-3">
+                            <label for="comment" class="form-label">Caption:</label>
+                            <textarea class="form-control" id="comment" rows="4" placeholder="Add the caption of your post here..."></textarea>
+                          </div>
+                          </form>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark">
+                        <i class="fas fa-camera"></i> 
+                      </button>
+                      <button type="button" class="btn btn-outline-dark">
+                        <i class="fas fa-map-marker-alt"></i> 
+                      </button>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle"
@@ -33,9 +73,9 @@
               aria-expanded="false">
               <i class="fa-solid fa-gear text-white"></i>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibiluty</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
               <li><a class="dropdown-item" href="#">Privacy</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -64,8 +104,8 @@
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab">
-      <div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card-post1 mb-2 min-vh-70 w-50 border border-secondary border-8 rounded-3  bg-white"
+      <div class="d-flex justify-content-center align-items-center mt-3 min-vh-100">
+        <div class="card-post1 mb-2 min-vh-70 w-50 border border-secondary border-9 rounded-3  bg-white"
           style="width: 600px; border-radius: 20%;">
           <nav class="navbar navbar-expand-lg bg-light border-top rounded-3">
             <div class="container-fluid">
@@ -133,7 +173,7 @@
     </div>
     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
       <div class="container">
-        <div class="row row-cols-3 g-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
           <div class="col d-flex">
             <img src="assets/img__ (1).jpg" class="img-fluid w-100">
           </div>
